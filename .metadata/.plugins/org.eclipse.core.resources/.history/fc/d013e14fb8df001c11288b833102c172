@@ -1,0 +1,15 @@
+package kr.hs.study.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	// get방식으로 /로 접속했을 때 아래 home()함수를 실행
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String home() {
+		System.out.println("home");
+		return null;
+	}
+}
